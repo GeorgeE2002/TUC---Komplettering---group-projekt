@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golfklubb Centar</title>
+    <meta name="description" content="Välkommen till Golfklubb Centar - golf, natur och gemenskap i hjärtat av Sverige.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="header-wrapper">
+        <div class="header-left">
+            <div class="logo">
+                <img src="images/Golflogo.png" alt="Golfklubb Centar">
+                <span>Golfklubb Centar</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="omoss.html">Om oss</a></li>
+                    <li><a href="boka-starttid.html">Boka starttid</a></li>
+                    <li><a href="tavlingar.html">Tävlingar & Event</a></li>
+                    <li><a href="medlem.html" class="active">Medlemskap</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <section class="booking-hero">
+            <div class="container">
+                <h1>Boka Starttid</h1>
+                <p>Enkel och snabb bokning - klart på under en minut</p>
+            </div>
+        </section>
+
+        <section class="booking-info">
+            <div class="container">
+                <div class="info-box">
+                    <h2>Greenfee & Regler</h2>
+                    <p><strong>Medlemmar:</strong> Inkluderat i medlemsavgiften</p>
+                    <p><strong>Gäster:</strong> 650 kr / 18 hål (inkl. bana och boll)</p>
+                    <p><strong>Ungdom (under 18):</strong> 350 kr</p>
+                    <p><strong>Bokningsregler:</strong></p>
+                    <ul>
+                        <li>Bokning öppnas 7 dagar i förväg</li>
+                        <li>Max 4 personer per tid</li>
+                        <li>Avbokning senast 24h i förväg</li>
+                        <li>Skor med spik tillåts inte - endast softspikes</li>
+                    </ul>
+                </div>
+
+                <div class="booking-form-box">
+                    <h2>Fyll i dina uppgifter</h2>
+                    <form class="booking-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Namn *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-post *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="datetime">Önskad tid *</label>
+                            <input type="datetime-local" id="datetime" name="datetime" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Antal personer / Meddelande</label>
+                            <textarea id="message" name="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Boka Starttid</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Golfklubb Centar. Alla rättigheter förbehållna.</p>
+            <p class="attribution">
+                Logo från <a href="https://www.flaticon.com/free-icons/golf" target="_blank" rel="noopener">Golf ikoner skapade av Freepik - Flaticon</a>
+            </p>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-to-top">Tillbaka till toppen</a>
+</body>
+</html>

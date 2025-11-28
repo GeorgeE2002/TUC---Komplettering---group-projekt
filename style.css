@@ -1,0 +1,968 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-warm-caramel: #FAF3E1;
+    --color-cool-beige: #F5E7C6;
+    --color-accent: #FF6D1F;
+    --color-text: #222222;
+    --color-white: #ffffff;
+    --transition: all 0.3s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-warm-caramel);
+    color: var(--color-text);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ===== ALLT INOM HEADER ===== */
+header {
+    background-color: var(--color-text);
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 8px rgba(34, 34, 34, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+/* ===== ALLT INOM LOGO ===== */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+.logo span {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-white);
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+}
+
+/* ===== ALLT INOM NAV ===== */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: var(--transition);
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    color: var(--color-accent);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+    flex: 1;
+}
+
+/* ===== ALLT INOM HERO ===== */
+.hero {
+    background-color: var(--color-cool-beige);
+    padding: 4rem 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color-text);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* ===== ALLT INOM BUTTONS ===== */
+.btn {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid var(--color-accent);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--color-accent);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--color-accent);
+}
+
+.btn-outline:hover {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+}
+
+/* ===== ALLT INOM NEWS ===== */
+.news-section {
+    padding: 4rem 0;
+    background-color: var(--color-warm-caramel);
+}
+
+.news-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-text);
+    font-size: 2rem;
+}
+
+.news-holder {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news-card {
+    background: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.news-card h3 {
+    font-size: 1.25rem;
+    margin: 1rem 1rem 0.5rem;
+    color: var(--color-text);
+}
+
+.news-card p {
+    font-size: 0.9rem;
+    margin: 0 1rem 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.read-more {
+    display: block;
+    text-align: right;
+    padding: 0 1rem 1rem;
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: var(--color-text);
+    text-decoration: underline;
+}
+
+/* ===== ALLT INOM FOOTER ===== */
+footer {
+    background-color: var(--color-text);
+    color: var(--color-white);
+    text-align: center;
+    padding: 1.5rem 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer .attribution {
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+    opacity: 0.8;
+}
+
+footer .attribution a {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+footer .attribution a:hover {
+    color: var(--color-accent);
+}
+
+/* ===== MEDIA GREJER ===== */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        display: block;
+        margin: 0.5rem auto;
+        max-width: 250px;
+    }
+
+    .btn-outline {
+        margin-left: 0;
+    }
+
+    .news-holder {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .news-card {
+        max-width: 100%;
+    }
+}
+
+/* ===== ALLT INOM OMOSS ===== */
+.about-hero {
+    background-color: var(--color-cool-beige);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.about-hero p {
+    font-size: 1.1rem;
+    color: var(--color-text);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-content {
+    padding: 3rem 0;
+    background-color: var(--color-warm-caramel);
+}
+
+.about-content .container {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.about-text-container {
+    display: inline-block;
+    vertical-align: top;
+    width: 58%;
+    min-width: 300px;
+    padding-right: 2rem;
+}
+
+.about-image-container {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    min-width: 250px;
+    text-align: center;
+}
+
+.about-image-container img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 768px) {
+    .about-text-container,
+    .about-image-container {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-image-container {
+        margin-top: 2rem;
+    }
+}
+
+.about-text-container h2 {
+    margin: 1.5rem 0 1rem;
+    font-size: 1.5rem;
+    color: var(--color-text);
+}
+
+.about-text-container p,
+.about-text-container ul {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.about-text-container ul {
+    padding-left: 1.5rem;
+}
+
+.about-text-container ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* ===== ALLT INOM BOKA STARTTID ===== */
+.booking-hero {
+    background-color: var(--color-cool-beige);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.booking-hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.booking-hero p {
+    font-size: 1.1rem;
+    color: var(--color-text);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.booking-info {
+    padding: 3rem 0;
+    background-color: var(--color-warm-caramel);
+}
+
+.booking-info .container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.info-box,
+.booking-form-box {
+    background: var(--color-cool-beige);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 300px;
+}
+
+.info-box h2,
+.booking-form-box h2 {
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+    font-size: 1.6rem;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+/* ===== ALLT INOM FORM STYLING ===== */
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: var(--color-white);
+    color: var(--color-text);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: 2px solid var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.form-group select::-ms-expand {
+    display: none;
+}
+
+.form-group select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+/* ===== ALLT INOM TÄVLINGAR & EVENT ===== */
+.tavlingar-hero {
+    background-color: var(--color-cool-beige);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.tavlingar-hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.tavlingar-hero p {
+    font-size: 1.1rem;
+    color: var(--color-text);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.event-calendar, .results-section, .anmalan-section {
+    padding: 3rem 0;
+    background-color: var(--color-warm-caramel);
+}
+
+.event-calendar h2,
+.results-section h2,
+.anmalan-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-text);
+    font-size: 2rem;
+}
+
+/* ===== ALLT INOM EVENT CALENDAR ===== */
+.events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.event-card {
+    display: flex;
+    background: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.event-date {
+    background: var(--color-accent);
+    color: var(--color-white);
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    writing-mode: vertical-lr;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.event-date .day {
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+}
+
+.event-info {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.event-info h3 {
+    margin: 0 0 0.8rem;
+    color: var(--color-text);
+    font-size: 1.3rem;
+}
+
+.event-info p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.btn-small {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* ===== ALLT INOM RESULTS ===== */
+.results-list {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.result-item h3 {
+    margin-bottom: 1rem;
+    color: var(--color-text);
+    text-align: center;
+}
+
+.result-item ul {
+    background: var(--color-white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.result-item li {
+    margin-bottom: 1rem;
+}
+
+/* ===== ALLT INOM ANMÄLAN FORM ===== */
+.anmalan-section .booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .event-card {
+        flex-direction: column;
+    }
+
+    .event-date {
+        writing-mode: horizontal-tb;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.8rem 0;
+    }
+}
+
+.sub-header {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== FORM STYLING ===== */
+.form-group select {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: var(--color-white);
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+.form-group select:focus {
+    outline: 2px solid var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.form-group select::-ms-expand {
+    display: none;
+}
+
+.form-group select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+/* ===== ALLT INOM MOBILE MENU ===== */
+.menu-toggle {
+    display: none;
+}
+
+.menu-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+}
+
+.menu-button::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 50px;
+    height: 40px;
+    z-index: -1;
+}
+
+.menu-button span {
+    display: block;
+    height: 2px;
+    background-color: var(--color-white);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .header-right {
+        display: block;
+    }
+
+    .menu-button {
+        display: flex;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--color-text);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 250px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        z-index: 99;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    nav li {
+        margin: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    nav a {
+        display: block;
+        padding: 0.8rem 1.5rem;
+        color: var(--color-white);
+        text-decoration: none;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .menu-toggle:checked ~ .header-right nav {
+        max-height: 500px;
+    }
+}
+
+/* ===== ALLT INOM MEDLEMSKAP PAGE ===== */
+
+.page-header {
+    background-color: var(--color-cool-beige);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.page-header .subtitle {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: var(--color-text);
+}
+
+.membership-hero {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.medlem-hero {
+    display: none;
+}
+
+.medlem-benefits {
+    padding: 3rem 0;
+    background-color: var(--color-warm-caramel);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.benefit-card {
+    background: var(--color-white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.benefit-card h3 {
+    margin-bottom: 0.8rem;
+    color: var(--color-text);
+}
+
+.login-section,
+.newsletter-section {
+    padding: 3rem 0;
+    background-color: var(--color-warm-caramel);
+}
+
+.login-section .booking-form,
+.newsletter-section .booking-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.login-section h2,
+.newsletter-section h2 {
+    text-align: center;
+}
+
+.login-section .sub-header,
+.newsletter-section .sub-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: #555;
+}
+
+/* ===== ALLT INOM KONTAKT PAGE ===== */
+
+.page-header {
+    background-color: var(--color-cool-beige);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.page-header .subtitle {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: var(--color-text);
+}
+
+.contact-info-section {
+    padding: 3rem 0;
+    background-color: var(--color-warm-caramel);
+}
+
+.contact-columns {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-details,
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-details h2,
+.contact-form h2 {
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+    font-size: 1.6rem;
+}
+
+.contact-details p,
+.contact-details h3 {
+    margin-bottom: 0.8rem;
+}
+
+.contact-details a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.opening-hours {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.5rem;
+}
+
+.opening-hours li {
+    margin-bottom: 0.4rem;
+    line-height: 1.4;
+}
+
+.map-section {
+    padding: 3rem 0;
+    background-color: var(--color-warm-caramel);
+    text-align: center;
+}
+
+.map-section h2 {
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.map-description {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    font-size: 1.05rem;
+    color: #555;
+}
+
+.map-placeholder img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    display: block;
+}
+
+.map-caption {
+    margin-top: 0.8rem;
+    font-style: italic;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* ===== BACK TO TOP BUTTON ===== */
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #222;
+    padding: 10px 15px;
+    border: 1px solid #d0c0d5;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.back-to-top:hover {
+    background-color: #f8f4fc;
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}

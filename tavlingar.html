@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golfklubb Centar</title>
+    <meta name="description" content="Välkommen till Golfklubb Centar - golf, natur och gemenskap i hjärtat av Sverige.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="header-wrapper">
+        <div class="header-left">
+            <div class="logo">
+                <img src="images/Golflogo.png" alt="Golfklubb Centar">
+                <span>Golfklubb Centar</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="omoss.html">Om oss</a></li>
+                    <li><a href="boka-starttid.html">Boka starttid</a></li>
+                    <li><a href="tavlingar.html">Tävlingar & Event</a></li>
+                    <li><a href="medlem.html" class="active">Medlemskap</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <section class="tavlingar-hero">
+            <div class="container">
+                <h1>Tävlingar & Evenemang</h1>
+                <p>Spännande tävlingar, sociala event och gemenskap på banan</p>
+            </div>
+        </section>
+
+        <section class="event-calendar">
+            <div class="container">
+                <h2>Kommande Event</h2>
+                <div class="events-list">
+                    <article class="event-card">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">JUNI</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Klubbtouren 2025 - Etapp 1</h3>
+                            <p>18-håls tävling med klassindelning. Öppet för medlemmar och gäster.</p>
+                            <a href="#anmalan" class="btn btn-small">Anmäl dig</a>
+                        </div>
+                    </article>
+                    <article class="event-card">
+                        <div class="event-date">
+                            <span class="day">03</span>
+                            <span class="month">JULI</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Summer Classic</h3>
+                            <p>Stilren tävling i vackra sommarmiljöer. Dress code: Traditionell golfklädsel.</p>
+                            <a href="#anmalan" class="btn btn-small">Anmäl dig</a>
+                        </div>
+                    </article>
+                    <article class="event-card">
+                        <div class="event-date">
+                            <span class="day">22</span>
+                            <span class="month">AUG</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Junior Open</h3>
+                            <p>För spelare 12-18 år. Priser i flera åldersklasser.</p>
+                            <a href="#anmalan" class="btn btn-small">Anmäl dig</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <div class="container">
+                <h2>Senaste Resultat</h2>
+                <div class="results-list">
+                    <div class="result-item">
+                        <h3>Club Championship 2024</h3>
+                        <ul>
+                            <li><span class="medal gold">🥇</span> <strong>1:a plats:</strong> Erik Johansson</li>
+                            <li><span class="medal silver">🥈</span> <strong>2:a plats:</strong> Sofia Larsson</li>
+                            <li><span class="medal bronze">🥉</span> <strong>3:e plats:</strong> Marcus Nilsson</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="anmalan-section" id="anmalan">
+            <div class="container">
+                <h2>Anmälan till Tävlingar</h2>
+                <p class="sub-header">Fyll i formuläret nedan för att anmäla dig till en tävling.</p>
+                <form class="booking-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="tavling-name">Namn och efternamn *</label>
+                        <input type="text" id="tavling-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tavling-email">E-post *</label>
+                        <input type="email" id="tavling-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tavling-event">Välj tävling *</label>
+                        <select id="tavling-event" name="event" required>
+                            <option value="">-- Välj en tävling --</option>
+                            <option value="klubbtour">Klubbtouren 2025 - Etapp 1</option>
+                            <option value="summer">Summer Classic</option>
+                            <option value="junior">Junior Open</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tavling-message">Meddelande</label>
+                        <textarea id="tavling-message" name="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Skicka Anmälan</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Golfklubb Centar. Alla rättigheter förbehållna.</p>
+            <p class="attribution">
+                Logo från <a href="https://www.flaticon.com/free-icons/golf" target="_blank" rel="noopener">Golf ikoner skapade av Freepik - Flaticon</a>
+            </p>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-to-top">Tillbaka till toppen</a>
+
+    <p>Snabb test för github</p>
+</body>
+</html>

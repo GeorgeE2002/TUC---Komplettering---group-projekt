@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Golfklubb Centar</title>
+    <meta name="description" content="Hitta till Golfklubb Centar i Jönköping - kontaktinformation, öppettider, karta och formulär för frågor och bokningar.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="header-left">
+                <div class="logo">
+                    <img src="images/Golflogo.png" alt="Golfklubb Centar">
+                    <span>Golfklubb Centar</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Startsida</a></li>
+                        <li><a href="omoss.html">Om oss</a></li>
+                        <li><a href="boka-starttid.html">Boka starttid</a></li>
+                        <li><a href="tavlingar.html">Tävlingar & Event</a></li>
+                        <li><a href="medlem.html">Medlemskap</a></li>
+                        <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="page-header">
+        <h1>Kontakt och Besök</h1>
+        <p class="subtitle">Vi hjälper dig gärna - kontakta oss eller besök oss på plats</p>
+    </section>
+
+    <main>
+        <section class="contact-info-section">
+            <div class="container">
+                <div class="contact-columns">
+                    <div class="contact-details">
+                        <h2>Kontaktinformation</h2>
+                        <p><strong>Adress:</strong><br>Golfvägen 1, 550 01 Jönköping</p>
+                        <p><strong>Telefon:</strong><br><a href="tel:+4636123456">036-123 456</a></p>
+                        <p><strong>E-post:</strong><br><a href="mailto:info@golfklubbcentar.se">info@golfklubbcentar.se</a></p>
+
+                        <h3>Öppettider</h3>
+                        <ul class="opening-hours">
+                            <li>Måndag-Fredag: 07:00-20:00</li>
+                            <li>Lördag: 07:00-18:00</li>
+                            <li>Söndag: 08:00-16:00</li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>Skicka ett meddelande</h2>
+                        <form class="booking-form" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="contact-name">Namn *</label>
+                                <input type="text" id="contact-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">E-post *</label>
+                                <input type="email" id="contact-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-subject">Ämne</label>
+                                <input type="text" id="contact-subject" name="subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Meddelande *</label>
+                                <textarea id="contact-message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Skicka Meddelande</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2>Hitta till oss</h2>
+                <p class="map-description">Vi ligger i hjärtat av Jönköping, omgivna av vacker natur och nära motorväg.</p>
+                <div class="map-placeholder">
+                    <img src="images/map-placeholder.jpg" alt="Karta över Golfklubb Centar, Jönköping" loading="lazy">
+                    <p class="map-caption">Golfklubb Centar, Golfvägen 1, Jönköping</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Golfklubb Centar. Alla rättigheter förbehållna.</p>
+            <p class="attribution">
+                Logo från <a href="https://www.flaticon.com/free-icons/golf" target="_blank" rel="noopener">Golf ikoner skapade av Freepik - Flaticon</a>
+            </p>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-to-top">Tillbaka till toppen</a>
+</body>
+</html>
