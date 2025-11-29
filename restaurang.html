@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurang & Shop - Golfklubb Centar</title>
+    <meta name="description" content="Upptäck vår restaurang med lokal mat och utsikt, samt golfshop med utrustning och exklusiva erbjudanden.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="header-left">
+                <div class="logo">
+                    <img src="images/Golflogo.png" alt="Golfklubb Centar">
+                    <span>Golfklubb Centar</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Startsida</a></li>
+                        <li><a href="omoss.html">Om oss</a></li>
+                        <li><a href="boka-starttid.html">Boka starttid</a></li>
+                        <li><a href="tavlingar.html">Tävlingar & Event</a></li>
+                        <li><a href="medlem.html">Medlemskap</a></li>
+                        <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                        <li><a href="restaurang.html" class="active">Restaurang & Shop</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <h1>Restaurang & Shop</h1>
+        <p class="subtitle">Upplev god mat med utsikt och hitta all golfutrustning du behöver</p>
+    </section>
+
+    <main>
+        <section class="restaurang-section">
+            <div class="container">
+                <div class="restaurang-content">
+                    <div class="restaurang-info">
+                        <h2>Vår Restaurang</h2>
+                        <p>Professionellt kök med fokus på lokala råvaror och säsongsrätter. Perfekt för en lunch efter rundan eller en middag med utsikt över 18:e green.</p>
+
+                        <h3>Öppettider</h3>
+                        <ul class="opening-hours">
+                            <li>Måndag-Fredag: 11:00-21:00</li>
+                            <li>Lördag: 10:00-22:00</li>
+                            <li>Söndag: 10:00-20:00</li>
+                        </ul>
+
+                        <h3>Exempel på rätter</h3>
+                        <ul class="menu-items">
+                            <li><strong>Grillad lax</strong> med kryddsmör och potatisgratäng - 185 kr</li>
+                            <li><strong>Beef burger</strong> med cheddar, picklad lök och pommes - 145 kr</li>
+                            <li><strong>Vegansk bowl</strong> med quinoa, rostad morot och tahini - 135 kr</li>
+                            <li><strong>Golfklubbens efterrätt</strong>: Chokladmousse med hallon - 85 kr</li>
+                        </ul>
+
+                        <a href="#boka-bord" class="btn">Boka Bord</a>
+                    </div>
+                    <div class="restaurang-image">
+                        <img src="images/golfrestaurang.jpg" alt="Inredning i restaurangen på Golfklubb Centar" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="shop-section">
+            <div class="container">
+                <h2>Vår Golfshop</h2>
+                <p class="shop-intro">Allt du behöver för en perfekt runda - från bollar till klubbor, kläder och accessoarer. Medlemmar får 10 % rabatt på allt i shoppen!</p>
+
+                <div class="shop-products">
+                    <div class="product-card">
+                        <img src="images/setofgolfballs.jpg" alt="Premium golfbollar" loading="lazy">
+                        <h3>Premium Golfbollar</h3>
+                        <p>Set av 12 st - tour-kvalitet</p>
+                        <p class="price">299 kr</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/Regnjacka.jpg" alt="Regnjacka för golf" loading="lazy">
+                        <h3>Regnjacka Pro</h3>
+                        <p>Vattentät, andningsbar - i klubbens färger</p>
+                        <p class="price">1 299 kr</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/golfgloves.jpg" alt="Golfhandskar" loading="lazy">
+                        <h3>Proffshandskar</h3>
+                        <p>Slitagehållbara med extra grepp</p>
+                        <p class="price">199 kr</p>
+                    </div>
+                </div>
+
+                <div class="shop-cta">
+                    <p>Vill du se hela sortimentet?</p>
+                    <a href="mailto:shop@golfklubbcentar.se" class="btn">Kontakta Shoppen</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="boka-bord-section" id="boka-bord">
+            <div class="container">
+                <h2>Boka Bord</h2>
+                <p class="sub-header">Fyll i formuläret så kontaktar vi dig för bekräftelse.</p>
+                <form class="booking-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="bord-namn">Namn *</label>
+                        <input type="text" id="bord-namn" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bord-email">E-post *</label>
+                        <input type="email" id="bord-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bord-datum">Datum och tid *</label>
+                        <input type="datetime-local" id="bord-datum" name="datetime" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bord-antal">Antal gäster *</label>
+                        <input type="number" id="bord-antal" name="guests" min="1" max="10" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bord-meddelande">Önskemål</label>
+                        <textarea id="bord-meddelande" name="message" rows="2"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Skicka Bokningsförfrågan</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Golfklubb Centar. Alla rättigheter förbehållna.</p>
+            <p class="attribution">
+                Logo från <a href="https://www.flaticon.com/free-icons/golf" target="_blank" rel="noopener">Golf ikoner skapade av Freepik - Flaticon</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
